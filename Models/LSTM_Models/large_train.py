@@ -6,19 +6,22 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.optimizers import Adam
 import numpy as np
 
-
+# define tokenizer
 tokenizer = Tokenizer()
 
+# scraped data with medium size
 data = open('Data/Scraped/wiki_data_3.txt').read()
 
-import tensorflow as tf
-print("Num GPUs Available: ", len(tf.config.list_physical_devices('GPU')))
-print(tf. __version__)
+
 corpus = data.lower().split("\n")
 tokenizer.fit_on_texts(corpus)
 total_words = len(tokenizer.word_index) + 1
 
-input_sequences = []
+input_sequences = [] 
+"""
+input sequence is basically every group of words as datapoints 
+ans their next word as a label which model should predict
+""" 
 for line in corpus:
     token_list = tokenizer.texts_to_sequences([line])[0]
     for i in range(1, len(token_list)):
@@ -26,18 +29,18 @@ for line in corpus:
         input_sequences.append(n_gram_sequence)
         
         
-# pad sequences
+# pad sequences, as all sequences should have same length
 max_sequence_len = 512
-print("hello")
+
 input_sequences = np.array(pad_sequences(input_sequences, maxlen=max_sequence_len, padding='pre'))
 
-print("hello")
+
 # create predictors and label
 xs, labels = input_sequences[:,:-1],input_sequences[:,-1]
 ys = labels
 
 
-#Model build
+#Model build, simple Recurrent NN structure
 model = Sequential()
 model.add(Embedding(total_words, 200, input_length=max_sequence_len-1))
 model.add(Bidirectional(LSTM(250)))
@@ -50,6 +53,7 @@ model.compile(loss=tf.keras.losses.SparseCategoricalCrossentropy(), optimizer=ad
 history = model.fit(xs, ys, epochs=5, verbose=1,workers = 4)
  
 
+#text which we want to continue
 seed_text = "Բարև բոլորին, ես այսօր առավօտյան գնալու եմ  "
 next_words = 10
 

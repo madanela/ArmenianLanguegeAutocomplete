@@ -1,3 +1,7 @@
+"""
+load trained model
+"""
+
 import configparser
 import numpy as np
 import pickle

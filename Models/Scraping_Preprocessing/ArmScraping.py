@@ -1,3 +1,7 @@
+"""
+funtions which removes unnecessary words, phrases, characters, symbols and returns cleaner text.
+"""
+
 import re
 
 NonRedundantWords = ['ալ', 'ակ', 'աղ',  'աջ',

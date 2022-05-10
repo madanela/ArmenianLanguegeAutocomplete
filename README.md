@@ -18,5 +18,7 @@ If you want to use pretrained model, you have to firsly, add the trained model, 
 
 Another model, is Bert Translation model which is using Bert LM and translate to for ALA. Translate_notebook is located in Models/Translate_Models which runs with input string. Also there is streamlit version of it which we used from open-source and by running `streamlit run next_word_armenian.py` it will work in iteractive envirionment.
 
-And last part, 
+And last part, is transformer models. In Models/Transformers there are 2 models gpt2-train.ipynb and gpt-2-model.ipynb. First one is model with training process, and second one is loading trained model and use only for prediction. In order to run the gpt-2-model.ipynb, you should download final folder from drive, and paste all 3 files of it inside Models/Transformer folder.
+
+Also there is example of ArmBerta included in Models/transformers, for testing.
 

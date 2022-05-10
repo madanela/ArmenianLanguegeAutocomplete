@@ -22,3 +22,5 @@ And last part, is transformer models. In Models/Transformers there are 2 models 
 
 Also there is example of ArmBerta included in Models/transformers, for testing.
 
+Besides all of it, there is Scraping_Preprocessing folder inside Models, which includes preprocessing and cleaning tools developed by us, in order to make our dataset more usable.
+

@@ -7,6 +7,7 @@ and the model does not learn on it because of lemitization basics and accuracy r
 Currently, our best model is GPT-2 trained 10 epochs on wiki_data_3.txt which is included in Data/Scraped folder.
 
 GPT-2 Distill pretrained model and Large LSTM are not included in this repository, because of size limit. 
+
 So both of them are availible in Drive. All three files inside final folder whould be located in Models/Transformers.
 large_LSTM should be located in Trained Folder.
 
@@ -22,5 +23,7 @@ And last part, is transformer models. In Models/Transformers there are 2 models 
 
 Also there is example of ArmBerta included in Models/transformers, for testing.
 
-Besides all of it, there is Scraping_Preprocessing folder inside Models, which includes preprocessing and cleaning tools developed by us, in order to make our dataset more usable.
+Besides all of it, there is Scraping_Preprocessing folder inside Models, which includes preprocessing and cleaning tools developed by us, in order to make our dataset more usable. All preprocessing has been done with data inside Data/Scraped, so you are not going to need any of those tools.
 
+Project authors: Nune Meliksetyan, Ani Guloyan, Alen Adamyan. 
+Instructor: Michael Poghosyan.

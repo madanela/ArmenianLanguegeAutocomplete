@@ -28,6 +28,12 @@ Besides all of it, there is Scraping_Preprocessing folder inside Models, which i
 Project authors: Nune Meliksetyan, Ani Guloyan, Alen Adamyan. 
 Instructor: Michael Poghosyan.
 
+# Instruction of application
+
+We used flask for our web developement. The main script is app.py, and you need to run that file which will give ip address and you can use it. 
+However, the web application requires all pretrained models, that are available in drive. model.pkl should be located in Models/word2vec, large_LSTM in Models/Trained and all 3 files inside final, in Models/Transformers. 
+
+
 # Video
 
 

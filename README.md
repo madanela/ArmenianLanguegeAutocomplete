@@ -32,6 +32,10 @@ Instructor: Michael Poghosyan.
 
 
 
-https://user-images.githubusercontent.com/57109551/168443210-ffe6bf5b-2520-42cd-9559-fd0b88881287.mp4
+https://user-images.githubusercontent.com/57109551/168443483-2642f960-d3fa-4df5-86a7-820b924b126f.mp4
+
+
+
+
 
 

@@ -27,3 +27,8 @@ Besides all of it, there is Scraping_Preprocessing folder inside Models, which i
 
 Project authors: Nune Meliksetyan, Ani Guloyan, Alen Adamyan. 
 Instructor: Michael Poghosyan.
+
+# Video
+
+![caption](video.mkv)
+

@@ -55,7 +55,7 @@ keras==2.8.0
 Keras-Preprocessing==1.1.2
 libclang==14.0.1
 loguru==0.6.0
-lxml==4.8.0
+lxml==4.9.1
 Markdown==3.3.7
 MarkupSafe==2.1.1
 matplotlib-inline==0.1.3
